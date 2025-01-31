@@ -4,8 +4,107 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My assignment</title>
+  <!-- googol font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+  <!-- daisyui -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://kit.fontawesome.com/f464d4f766.js" crossorigin="anonymous"></script>
+<style>
+  .sora-font{
+    font-family: "Sora", serif;
+  }
+</style>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          clifford: '#da373d',
+          'fist-colors': '#FFFFFF',
+        }
+      }
+    }
+  }
+</script>
 </head>
-<body>
-  
+<body class="sora-font mb-[90px]">
+ <!-- header-section -->
+  <header class="container mx-auto">
+    <div class="navbar bg-base-100">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+            <li><a>Product</a></li>
+            <li><a>Services</a></li>
+            <li><a>Contact Us</a></li>
+          </ul>
+        </div>
+        <img src="c2-assets/logo-header.png" alt="">
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a>Product</a></li>
+          <li><a>Services</a></li>
+          <li><a>Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="navber-end w-auto hidden md:block lg:block flex-1 text-center justify-center">
+        <ul class="menu menu-horizontal gap-2">
+          <li class="items-center justify-center"><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
+          <li class="items-center justify-center"><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+          <li><a class="btn rounded-xl">Login</a></li>
+          <li><a class="btn rounded-xl bg-green-500">Register</a></li>
+        </ul>
+    </div>
+  </header>
+  <!-- maine-section -->
+   <main class="container mx-auto">
+<!-- hero section -->
+<section>
+  <div class="hero min-h-screen">
+    <div class="hero-content text-center">
+      <div class=" space-y-7 pb-7">
+        <div>
+          <h1 class="text-4xl font-semibold">Freshness <span class=" bg-green-500">You can <br> Count</span>You Can On, Prices You’ll Love!
+          </h1>
+        </div>
+        <div>
+          <p>
+            Vegetables are parts of plants that are consumed by humans or other animals as food. The original meaning is still commonly used and is applied <br> to plants collectively to refer  to all edible plant matter, including the flowers, fruits, stems, leaves, roots, and seeds.
+          </p>
+        </div>
+          <div class="flex justify-center">
+            <img class="lg:w-[830px] w[630]" src="c2-assets/hero-vegetables.png" alt="">
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- card section -->
+ <section></section>
+   </main>
+   <!-- footer-section -->
+    <footer>
+
+    </footer>
 </body>
 </html>
